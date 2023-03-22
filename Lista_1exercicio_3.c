@@ -29,9 +29,10 @@ int main(){
 
     printf("%3d: inteiro\n", numeroInteiro);
     printf("float: %.3f\n", numeroRealFloat);
-    printf("double: %lf\n", numeroRealDouble);
+    printf("double: %.1lf\n", numeroRealDouble);
     printf("char: %c", umaLetra);
     printf("string: %s", umaString);
+    printf("Endereco do inteiro %x", &numeroInteiro); //estou mandando printar o endereço de memoria do conteudo
 
 
     return 0;
