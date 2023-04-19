@@ -1,34 +1,63 @@
-// De graus Celsius(C) para graus Fahrenheit(F):F = (9 ∗ C/5) + 32)
-#include <stdio.h> 
+#include<stdio.h>
 
-    float celsusFahrenheit (float C){
-        float F;
-            F = (9 * C/5) + 32;
-                return F;
+float celsius(float valor){
 
-    }
-//De graus Fahrenheit (F) para graus Celsius (C): C = (F − 32) ∗ 5/9
+    return (9.0/5.0 * valor) + 32;
 
-    double FahrenheitCelsius (float F){
-        double C;
-            C = (F - 32) * 5/9;
-                return C;
 }
-//De graus Celsius (C) para graus Kelvin (K): K = C + 273.15
-    double celsiusKrlvin (float C){
-        double K;
-            K = C + 273.15;
-                return K;
-    }
-    
-    int main()
-    {  
+
+float fahrenheit(float valor){
+
+    return (valor-32)*5.0/9.0;
+
+}
+
+float formula (float k, float f){
+
+    return k - f + 273.15;
+
+
+}
+
+int main(){
+
+    int escolha = 0;
+    float f = 0;
+    float k = 0;
+    float resultado = 0;
+
+    printf("Escolha a conversao:\n1- Celsius para Fahrenheint\n2- Fahrenheit para Celsius\n3 - Kelvin para Celsius\n>");
+    scanf("%d", &escolha);
+
+    printf("Insira o valor de f:");
+    scanf("%.2f", &f);
+
+    printf("Insira o valor de k:");
+    scanf("%f", &k);
+   
+
+
+    switch(escolha){
+
+        case 1:
+            resultado = celsius(f);
+            printf("%.2f",resultado);
+            break;
        
-        float F, C, K;
-            scanf ("%F", &C);
-                F = celsusFahrenheit (C);
-                    K = celsiusKrlvin (C);
-                        scanf ("%f", &F);
-                            C = FahrenheitCelsius (F);
-        return 0;
+        case 2:
+            resultado = fahrenheit(f);
+            printf("%.2f", resultado);
+            break;
+
+        case 3:
+            resultado = formula(k ,f);
+            printf("%.2f", resultado);
+            break;
+
     }
+
+   
+
+
+    return 0;
+}
