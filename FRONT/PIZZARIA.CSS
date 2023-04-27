@@ -1,0 +1,144 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Cores */
+:root {
+  --cor-primaria: #d83a3a;
+  --cor-secundaria: #dfe4f3;
+  --cor-terciaria: #222;
+  --cor-texto: #333;
+}
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: var(--cor-texto);
+  background-color: var(--cor-secundaria);
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+}
+
+/* Estilos do conteúdo principal */
+main {
+  padding: 50px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p:first-of-type {
+  margin-top: 10px;
+}
+
+.card p:last-of-type {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Estilos do formulário de contato */
+form {
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
