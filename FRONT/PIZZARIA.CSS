@@ -1,20 +1,21 @@
-/* Fontes */
+/* PARA INPORTAR FONTES */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* Cores */
+/* USADO PARA DEFINIR CORES AO DECORRER DO CÓDIGO */
 :root {
   --cor-primaria: #d83a3a;
   --cor-secundaria: #dfe4f3;
   --cor-terciaria: #222;
   --cor-texto: #333;
 }
-/* Estilos globais */
+/* ESTILO PADRÃO */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
+  /* ESTILO GERAL DA PÁGINA*/
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -22,7 +23,7 @@ body {
   background-color: var(--cor-secundaria);
 }
 
-/* Estilos do cabeçalho */
+/* ESTILO DO CABEÇARIO */
 header {
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
@@ -49,15 +50,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.hero-text {
-  text-align: center;
-  margin-top: 50px;
-}
-
-h1 {
-  font-size: 60px;
-}
-
 p {
   font-size: 24px;
   margin-bottom: 30px;
@@ -78,7 +70,7 @@ button:hover {
   color: var(--cor-secundaria);
 }
 
-/* Estilos do conteúdo principal */
+/* ESTILO DO CONTEÚDO PRINCIPAL*/
 main {
   padding: 50px;
 }
@@ -111,7 +103,7 @@ h2 {
   margin-top: 20px;
 }
 
-/* Estilos do formulário de contato */
+/* ESTILO DO CONTATO */
 form {
   margin-top: 50px;
 }
