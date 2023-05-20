@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 10px;
-    background-color: #000000;
+    background: -webkit-linear-gradient(left, #25355d, #60f6f0);
+    background: -moz-linear-gradient(left, #25355d, #60f6f0);
+    background: -ms-linear-gradient(left, #25355d, #60f6f0);
+    background: -o-linear-gradient(left, #25355d, #60f6f0);
+    background: linear-gradient(to right, #25355d, #60f6f0);
   }
  
   header {
     text-align: center;
     padding: 20px;
-    background-color: #124ceb;
+    /* background-color: #124ceb; */
   }
  
   h1 {
@@ -16,12 +21,12 @@ body {
   }
  
   nav {
-    background-color: #81c3e9;
+    /* background-color: #81c3e9; */
     padding: 10px;
   }
  
   nav a {
-    color: #81c3e9;
+    /* color: #81c3e9; */
     text-decoration: none;
     margin-right: 10px;
   }
@@ -32,11 +37,11 @@ body {
  
   article {
     padding: 20px;
-    background-color: #81c3e9;
+    /* background-color: #81c3e9; */
   }
  
   footer {
-    background-color: #124ceb;
+    /* background-color: #124ceb; */
     color: #fff;
     padding: 10px;
     text-align: center;
