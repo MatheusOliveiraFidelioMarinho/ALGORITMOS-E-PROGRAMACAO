@@ -122,7 +122,7 @@ void buscarUsuarioPorEmail() {
             printf("Sexo: %s", sexo[i]);
             printf("Endereço: %s", endereco[i]);
             printf("Altura: %.2lf\n", altura[i]);
-            printf("Vacina: %s\n", vacina[i] ? "Sim" : "Não");
+            printf("Vacina: %s\n", vacina[i] ? "Sim" : "Nao");
             
             return;
         }
@@ -138,9 +138,9 @@ void imprimirUsuarios() {
         printf("Nome: %s", nome[i]);
         printf("Email: %s", email[i]);
         printf("Sexo: %s", sexo[i]);
-        printf("Endereço: %s", endereco[i]);
+        printf("Endereco: %s", endereco[i]);
         printf("Altura: %.2lf\n", altura[i]);
-        printf("Vacina: %s\n", vacina[i] ? "Sim" : "Não");
+        printf("Vacina: %s\n", vacina[i] ? "Sim" : "Nao");
         printf("------------------------\n");
     }
 }
@@ -172,7 +172,7 @@ int main() {
         
         printf("Opcao: ");
         scanf(" %c", &opcao);
-        getchar(); // Limpar o caractere de nova linha deixado pelo scanf
+        getchar();
         
         switch (opcao) {
             case '1':
