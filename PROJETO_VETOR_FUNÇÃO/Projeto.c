@@ -146,13 +146,12 @@ void imprimirUsuarios() {
 }
 
 void fazerBackup() {
-    // Implemente a lógica para fazer backup dos usuários cadastrados aqui
-    // Por exemplo, copiar os vetores id, nome, email, sexo, endereco, altura e vacina para outros vetores de backup
+    // Falta colocar uma lógica para fazer backup dos usuários cadastrados aqui
     printf("Backup realizado com sucesso!\n");
 }
 
 void restaurarDados() {
-    // Implemente a lógica para restaurar os dados a partir de um backup aqui
+    /// Falta colocar uma lógica para restaurar os dados a partir de um backup aqui
     printf("Dados restaurados com sucesso!\n");
 }
 
