@@ -115,7 +115,6 @@ void buscarUsuarioPorEmail() {
     int i;
     for (i = 0; i < totalUsuarios; i++) {
         if (strcmp(email[i], emailUsuario) == 0) {
-            // Exiba as informações do usuário encontrado
             printf("ID: %d\n", id[i]);
             printf("Nome: %s", nome[i]);
             printf("Email: %s", email[i]);
