@@ -24,17 +24,17 @@ void incluirUsuario() {
     }
     
     
-    printf("Digite o nome completo: ");
+    printf("Digite seu nome completo: ");
     fgets(nome[totalUsuarios], MAX_NAME_LENGTH, stdin);
-    printf("Digite o email: ");
+    printf("Digite o seu email: ");
     fgets(email[totalUsuarios], MAX_EMAIL_LENGTH, stdin);
-    printf("Digite o sexo (Feminino/Masculino/Indiferente): ");
+    printf("Digite o sexo (Feminino, Masculino, Outros): ");
     fgets(sexo[totalUsuarios], MAX_NAME_LENGTH, stdin);
-    printf("Digite o endereço: ");
+    printf("Digite o seu endereço: ");
     fgets(endereco[totalUsuarios], MAX_ADDRESS_LENGTH, stdin);
-    printf("Digite a altura (entre 1 e 2 metros): ");
+    printf("Digite sua altura: ");
     scanf("%lf", &altura[totalUsuarios]);
-    printf("Recebeu vacina? (1 - Sim / 0 - Não): ");
+    printf("Voce tomou vacina? (1 - Sim // 0 - Nao): ");
     scanf("%d", &vacina[totalUsuarios]);
     getchar(); 
     
@@ -75,7 +75,7 @@ void editarUsuario() {
         }
     }
     
-    printf("Usuario nao encontrado.\n");
+    printf("Usuario nao existe.\n");
 }
 
 void excluirUsuario() {
@@ -104,7 +104,7 @@ void excluirUsuario() {
         }
     }
     
-    printf("Usuario não encontrado.\n");
+    printf("Usuario nao encontrado.\n");
 }
 
 void buscarUsuarioPorEmail() {
@@ -195,7 +195,7 @@ int main() {
                 restaurarDados();
                 break;
             case '0':
-                printf("Encerrando o programa...\n");
+                printf("Fechando o programa...\n");
                 break;
             default:
                 printf("Opcao invalida.\n");
