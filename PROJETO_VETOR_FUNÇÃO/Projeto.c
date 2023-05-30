@@ -19,7 +19,7 @@ int vacina[MAX_USERS];
 
 void incluirUsuario() {
     if (totalUsuarios == MAX_USERS) {
-        printf("Limite máximo de usuários atingido.\n");
+        printf("O NUMERO TOTAL DE USUARIOS FOI ATINGIDO.\n");
         return;
     }
     
