@@ -60,13 +60,13 @@ void editarUsuario() {
             fgets(nome[i], MAX_NAME_LENGTH, stdin);
             printf("Digite o novo email: ");
             fgets(email[i], MAX_EMAIL_LENGTH, stdin);
-            printf("Digite o novo sexo (Feminino/Masculino/Indiferente): ");
+            printf("Digite o novo sexo (Feminino, Masculino, Outros): ");
             fgets(sexo[i], MAX_NAME_LENGTH, stdin);
             printf("Digite o novo endereço: ");
             fgets(endereco[i], MAX_ADDRESS_LENGTH, stdin);
-            printf("Digite a nova altura (entre 1 e 2 metros): ");
+            printf("Digite a nova altura: ");
             scanf("%lf", &altura[i]);
-            printf("Recebeu vacina? (1 - Sim / 0 - Nao): ");
+            printf("Voce tomou vacina? (1 - Sim // 0 - Nao): ");
             scanf("%d", &vacina[i]);
             getchar(); 
             
